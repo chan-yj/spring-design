@@ -1,0 +1,3 @@
+这个案例，对象配置在bean.xml中的bean，然后使用ApplicationContext接口读取bean.xml，
+初始化spring容器，并解析bean.xml，进而创建对象。
+然后通过ac.getBean("bean.xml中id") 从spring容器中获取对象信息

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--账号service层-->
+    <bean id="accountService" class="com.example.demo.spring.bean.service.AccountServiceImpl">
+        <property name="accountDao" ref="accountDao"></property>
+    </bean>
+
+
+    <!--账号dao层-->
+    <bean id="accountDao" class="com.example.demo.spring.bean.dao.IAccountDaoImpl"/>
+
+</beans>
