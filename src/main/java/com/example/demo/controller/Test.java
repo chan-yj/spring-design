@@ -1,7 +1,9 @@
 package com.example.demo.controller;
 
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
 
 @RestController
 public class Test {
@@ -16,6 +18,7 @@ public class Test {
     }
 
     @RequestMapping("/test2")
+    @Transactional
     public Integer test2(){
 
         //Integer a;
@@ -79,6 +82,22 @@ public class Test {
         varNum = varNum + 1;
         System.out.println(varNum);
 
+        //itar
+
+        String a = "ksdkfksd,sdkfksdf,sdfds";
+        a.split(",");
+
+
+    }
+
+    //ctrl+o
+    //查看我们继承的类或者接口中的方法，以及我们要实现的方法
+    class test2 implements Runnable{
+
+        @Override
+        public void run() {
+
+        }
     }
 
 
